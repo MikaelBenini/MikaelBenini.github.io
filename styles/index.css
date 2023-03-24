@@ -1,0 +1,37 @@
+#content {
+  height: 30vh;
+  width: fit-content;
+  margin-left: 12vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#name {
+  font-size: calc(0.8vw + 1.7em);
+  font-weight: bold;
+}
+#title {
+  width: fit-content;
+  border-right: 3px solid;
+  padding-right: 10px;
+  font-size: 1.2em;
+  animation: blink .7s infinite;
+}
+#social {
+  height: 20vh;
+  margin-top: 10vh;
+  width: fit-content;
+  margin-left: 12vw;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+#social a {
+  font-size: 1.6rem;
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
