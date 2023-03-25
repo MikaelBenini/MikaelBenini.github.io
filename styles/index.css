@@ -23,7 +23,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 50vw;
+    height: 42rem;
+    width: 100%;
     background-attachment: fixed;
     padding: 76px 0 0 0;
 }
@@ -73,18 +74,20 @@
 }
 
 #social {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 12vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, rgb(59, 54, 54) 50%, rgba(201, 192, 192, 0) 100%);
+    color: #fff;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
-    margin-top: 20%;
 }
 
 #social a {
+    right: 10px;
     font-size: 2.6rem;
 }
 
