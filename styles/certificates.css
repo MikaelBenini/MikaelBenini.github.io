@@ -1,70 +1,100 @@
 html {
-  min-height: 100%;
+    min-height: 100%;
 }
+
 #navbar {
-  height: 20vh;
+    height: 20vh;
 }
+
 #certificate-list {
-  width: 82vw;
-  margin-left: 12vw;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 45px;
+    margin-top: 2rem;
+    width: 82vw;
+    margin-left: 12vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 45px;
 }
+
 .certificate-item {
-  height: 120px;
-  width: 95%;
-  max-width: 460px;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-end;
-  background-color: var(--cultured);
-  cursor: pointer;
+    height: 120px;
+    width: 95%;
+    max-width: 460px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #000000ab;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+    transform: translateY(50%);
+    opacity: 0;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-fill-mode: forwards;
 }
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #certificate {
-  height: 104px;
-  width: 100%;
-  border-top: 2px solid var(--red-pigment);
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    height: 104px;
+    width: 100%;
+    border-top: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 #issuer-logo {
-  height: 104px;
-  width: 104px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 104px;
+    width: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #issuer-logo img {
-  height: 60%;
-  width: 60%;
+    height: 60%;
+    width: 60%;
+    color: white;
 }
+
 #information {
-  height: 70%;
-  width: calc(100% - 119px);
-  padding-left: 15px;
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  flex-direction: column;
+    height: 70%;
+    width: calc(100% - 119px);
+    padding-left: 15px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
 }
+
 #information p {
-  font-size: 80%;
-  color: #2b2a2a;
+    font-size: 80%;
+    color: #ffffff;
 }
+
 #information .emphasis {
-  color: var(--rich-black-fogra-39);
-  font-size: 85%;
-  font-weight: bold;
+    color: white;
+    font-size: 85%;
+    font-weight: bold;
 }
+
 #pdf {
-  height: 92%;
-  width: 80%;
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    height: 92%;
+    width: 80%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

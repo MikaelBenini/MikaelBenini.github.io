@@ -1,37 +1,95 @@
 #content {
-  height: 30vh;
-  width: fit-content;
-  margin-left: 12vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+    height: 30vh;
+    width: fit-content;
+    margin-left: 12vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to bottom, rgb(59, 54, 54) 50%, rgba(201, 192, 192, 0) 100%);
+    box-shadow: 0px 0px 20px 20px rgba(78, 77, 77, 0.3);
+    transform: translateY(50%);
+    opacity: 0;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-fill-mode: forwards;
 }
+
+.parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 50vw;
+    background-attachment: fixed;
+    padding: 76px 0 0 0;
+}
+
+#contente {
+    height: 30vh;
+    width: fit-content;
+    margin-left: 12vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #000000ab;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.425);
+    transform: translateY(50%);
+    opacity: 0;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #name {
-  font-size: calc(0.8vw + 1.7em);
-  font-weight: bold;
+    font-size: calc(0.8vw + 1.7em);
+    font-weight: bold;
 }
+
 #title {
-  width: fit-content;
-  border-right: 3px solid;
-  padding-right: 10px;
-  font-size: 1.2em;
-  animation: blink .7s infinite;
+    width: fit-content;
+    border-right: 3px solid;
+    padding-right: 10px;
+    font-size: 1.2em;
+    animation: blink .7s infinite;
 }
+
 #social {
-  height: 20vh;
-  margin-top: 10vh;
-  width: fit-content;
-  margin-left: 12vw;
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 12px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 12vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20%;
 }
+
 #social a {
-  font-size: 1.6rem;
+    font-size: 2.6rem;
 }
 
 @keyframes blink {
-  50% { border-color: transparent }
+    50% {
+        border-color: transparent
+    }
 }
