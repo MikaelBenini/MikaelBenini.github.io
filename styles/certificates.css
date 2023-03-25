@@ -48,7 +48,6 @@ html {
 #certificate {
     height: 104px;
     width: 100%;
-    border-top: 2px solid white;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
