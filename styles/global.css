@@ -58,7 +58,7 @@ a {
     }
 }
 
-#navbar h1 {
+#navbar h2 {
     width: fit-content;
     background-image: linear-gradient(to bottom, rgb(59, 54, 54) 50%, rgba(201, 192, 192, 0) 100%);
     padding: 20px;

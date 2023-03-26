@@ -42,81 +42,27 @@ function isMobile() {
 }
 
 // ——————————————————————————————————————————————————
-// TextScramble
+// Text
 // ——————————————————————————————————————————————————
 
-class TextScramble {
-    constructor(el) {
-        this.el = el
-        this.chars = '!<>-_\\/[]{}—=+*^?#________'
-        this.update = this.update.bind(this)
-    }
-    setText(newText) {
-        const oldText = this.el.innerText
-        const length = Math.max(oldText.length, newText.length)
-        const promise = new Promise((resolve) => this.resolve = resolve)
-        this.queue = []
-        for (let i = 0; i < length; i++) {
-            const from = oldText[i] || ''
-            const to = newText[i] || ''
-            const start = Math.floor(Math.random() * 40)
-            const end = start + Math.floor(Math.random() * 40)
-            this.queue.push({ from, to, start, end })
-        }
-        cancelAnimationFrame(this.frameRequest)
-        this.frame = 0
-        this.update()
-        return promise
-    }
-    update() {
-        let output = ''
-        let complete = 0
-        for (let i = 0, n = this.queue.length; i < n; i++) {
-            let { from, to, start, end, char } = this.queue[i]
-            if (this.frame >= end) {
-                complete++
-                output += to
-            } else if (this.frame >= start) {
-                if (!char || Math.random() < 0.28) {
-                    char = this.randomChar()
-                    this.queue[i].char = char
-                }
-                output += `<span class="dud">${char}</span>`
-            } else {
-                output += from
-            }
-        }
-        this.el.innerHTML = output
-        if (complete === this.queue.length) {
-            this.resolve()
-        } else {
-            this.frameRequest = requestAnimationFrame(this.update)
-            this.frame++
-        }
-    }
-    randomChar() {
-        return this.chars[Math.floor(Math.random() * this.chars.length)]
-    }
-}
-
-const phrases = [
-    'Hello! My name is Mikael Siqueira Benini ',
-    'I have a degree in Software Engineering and experience in infrastructure and customer service. ',
-    'I seek to create effective and innovative solutions and am always learning and acquiring new skills. ',
-    'I have experience working on projects in different segments with multidisciplinary teams. ',
-    'This has allowed me to expand my knowledge in technology, programming, systems analysis, software architecture, and agile methodologies. ',
-    'I am a problem solver with leadership skills, effective communication, and project management experience.'
-]
+const text = "Hello! My name is Mikael Siqueira Benini|I have a degree in Software Engineering and experience in infrastructure and customer service. I seek to create effective and innovative solutions using technologies such as Laravel, MariaDB, and JavaScript.|I am always learning and acquiring new skills to improve my abilities in software development. I have experience working on projects in different segments with multidisciplinary teams. This has allowed me to expand my knowledge in technology, programming, systems analysis, software architecture, and agile methodologies.|I am a problem solver with leadership skills, effective communication, and project management experience.";
 
 const el = document.querySelector('.text')
-const fx = new TextScramble(el)
+let index = 0
 
-let counter = 0
-const next = () => {
-    fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 4500)
-    })
-    counter = (counter + 1) % phrases.length
+function type() {
+    const char = text[index] === '|' ? '<br>' : text[index];
+    el.innerHTML += char;
+    index++
+    if (index === text.length) {
+        clearInterval(timer)
+    }
 }
 
-next()
+const timer = setInterval(type, 50)
+
+
+window.addEventListener("load", function() {
+    const loader = document.getElementById("loader");
+    loader.style.display = "none";
+});
