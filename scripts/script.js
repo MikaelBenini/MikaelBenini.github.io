@@ -64,5 +64,7 @@ const timer = setInterval(type, 50)
 
 window.addEventListener("load", function() {
     const loader = document.getElementById("loader");
+    const conteudo = document.getElementById("conteudo");
     loader.style.display = "none";
+    conteudo.style.display = "block";
 });

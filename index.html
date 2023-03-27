@@ -19,108 +19,109 @@
         <div class="loader"></div>
     </div>
 
-    <div class="parallax" style="background-image: url('/assets/images/website-background.png');">
-        <div>
-            <div id="navbar">
-                <h2> Mikael Siqueira Benini </h2>
-            </div>
-            <div id="content">
-                <p id="name">Resume</p>
-                <p id="title" class="text"></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="parallax" style="background-image: url('/assets/images/pro-background.png');">
-
-        <div class="slider">
-            <input type="radio" name="slider" title="Home" checked="checked" class="slider__nav" />
-            <input type="radio" name="slider" title="Senha Facil" class="slider__nav" />
-            <input type="radio" name="slider" title="TubeFast" class="slider__nav" />
-            <div class="slider__inner">
-                <div class="slider__contents">
-                    <i class="slider__image fa fa-newspaper-o"></i>
-                    <h1 class="slider__caption">Projects</h1>
+    <div id="conteudo">
+        <div class="parallax" style="background-image: url('/assets/images/website-background.png');">
+            <div>
+                <div id="navbar">
+                    <h2> Mikael Siqueira Benini </h2>
                 </div>
-                <div class="slider__contents">
-                    <div class="slider__background">
-                        <h2 class="slider__caption">Senha Facil</h2>
-                        <p class="slider__txt">The Senha Fácil project aims to streamline customer service by eliminating queues and allowing users to remove passwords virtually. Back-end technologies (PHP and MySQL) were used to create the system structure, along with HTML,
-                            CSS and JavaScript for the user interface. The project received excellent results and was presented as a Software Engineering Course Completion Work.</p>
-                    </div>
-                </div>
-                <div class="slider__contents">
-                    <div class="slider__background">
-                        <h2 class="slider__caption">TubeFast</h2>
-                        <p class="slider__txt">The TubeFast project is a web-based tool that enables users to embed YouTube videos onto their websites with custom player controls. It uses a combination of technologies, including Laravel, MariaDB, and JavaScript to provide a
-                            seamless and efficient solution for individuals and companies alike. With TubeFast, users can avoid watermarks and the need to pay for video bandwidth, making it an affordable and effective way to showcase video content on
-                            their website.</p>
-                    </div>
-                </div>
-                <div class="slider__contents">
-                    <div class="slider__background"><i class="slider__image fa fa-diamond"></i>
-                        <h2 class="slider__caption">diamond</h2>
-                        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-                    </div>
+                <div id="content">
+                    <p id="name">Resume</p>
+                    <p id="title" class="text"></p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="parallax" style="background-image: url('/assets/images/cer-background.png');">
-        <div id="contente">
-            <p id="name" style="padding: 0 40px 0px 40px;">Certificates</p>
+        <div class="parallax" style="background-image: url('/assets/images/pro-background.png');">
+            <div class="slider">
+                <input type="radio" name="slider" title="Home" checked="checked" class="slider__nav" />
+                <input type="radio" name="slider" title="Senha Facil" class="slider__nav" />
+                <input type="radio" name="slider" title="TubeFast" class="slider__nav" />
+                <div class="slider__inner">
+                    <div class="slider__contents">
+                        <i class="slider__image fa fa-newspaper-o"></i>
+                        <h1 class="slider__caption">Projects</h1>
+                    </div>
+                    <div class="slider__contents">
+                        <div class="slider__background">
+                            <h2 class="slider__caption">Senha Facil</h2>
+                            <p class="slider__txt">The Senha Fácil project aims to streamline customer service by eliminating queues and allowing users to remove passwords virtually. Back-end technologies (PHP and MySQL) were used to create the system structure, along with
+                                HTML, CSS and JavaScript for the user interface. The project received excellent results and was presented as a Software Engineering Course Completion Work.</p>
+                        </div>
+                    </div>
+                    <div class="slider__contents">
+                        <div class="slider__background">
+                            <h2 class="slider__caption">TubeFast</h2>
+                            <p class="slider__txt">The TubeFast project is a web-based tool that enables users to embed YouTube videos onto their websites with custom player controls. It uses a combination of technologies, including Laravel, MariaDB, and JavaScript to provide
+                                a seamless and efficient solution for individuals and companies alike. With TubeFast, users can avoid watermarks and the need to pay for video bandwidth, making it an affordable and effective way to showcase video content
+                                on their website.</p>
+                        </div>
+                    </div>
+                    <div class="slider__contents">
+                        <div class="slider__background"><i class="slider__image fa fa-diamond"></i>
+                            <h2 class="slider__caption">diamond</h2>
+                            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="certificate-list">
-            <div class="certificate-item" onclick="displayCertificate('eng.pdf')">
-                <div id="certificate">
-                    <div id="issuer-logo">
-                        <img src="assets/logos/cr-logo.png" alt="Issuer Logo">
-                    </div>
-                    <div id="information">
-                        <p>Centro Universitario Assis Gurgacz</p>
-                        <p class="emphasis">Software Engineering</p>
-                        <p>Dez, 2022</p>
+
+        <div class="parallax" style="background-image: url('/assets/images/cer-background.png');">
+            <div id="contente">
+                <p id="name" style="padding: 0 40px 0px 40px;">Certificates</p>
+            </div>
+            <div id="certificate-list">
+                <div class="certificate-item" onclick="displayCertificate('eng.pdf')">
+                    <div id="certificate">
+                        <div id="issuer-logo">
+                            <img src="assets/logos/cr-logo.png" alt="Issuer Logo">
+                        </div>
+                        <div id="information">
+                            <p>Centro Universitario Assis Gurgacz</p>
+                            <p class="emphasis">Software Engineering</p>
+                            <p>Dez, 2022</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="certificate-item" onclick="displayCertificate('20cur.pdf')">
-                <div id="certificate">
-                    <div id="issuer-logo">
-                        <img src="assets/logos/anal-logo.png" alt="Issuer Logo">
-                    </div>
-                    <div id="information">
-                        <p>Centro Universitario Assis Gurgacz</p>
-                        <p class="emphasis">Analist of Systems</p>
-                        <p>Set, 2022</p>
-                    </div>
-                </div>
-            </div>
-            <div class="certificate-item" onclick="displayCertificate('anal.pdf')">
-                <div id="certificate">
-                    <div id="issuer-logo">
-                        <img src="assets/logos/udemy-logo.png" alt="Issuer Logo">
-                    </div>
-                    <div id="information">
-                        <p>Udemy</p>
-                        <p class="emphasis">Complete Web Development - 20 courses + 20 projects</p>
-                        <p>Mar, 2023</p>
+                <div class="certificate-item" onclick="displayCertificate('20cur.pdf')">
+                    <div id="certificate">
+                        <div id="issuer-logo">
+                            <img src="assets/logos/anal-logo.png" alt="Issuer Logo">
+                        </div>
+                        <div id="information">
+                            <p>Centro Universitario Assis Gurgacz</p>
+                            <p class="emphasis">Analist of Systems</p>
+                            <p>Set, 2022</p>
+                        </div>
                     </div>
                 </div>
+                <div class="certificate-item" onclick="displayCertificate('anal.pdf')">
+                    <div id="certificate">
+                        <div id="issuer-logo">
+                            <img src="assets/logos/udemy-logo.png" alt="Issuer Logo">
+                        </div>
+                        <div id="information">
+                            <p>Udemy</p>
+                            <p class="emphasis">Complete Web Development - 20 courses + 20 projects</p>
+                            <p>Mar, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <embed id="pdf" />
+
+                <script src="scripts/script.js"></script>
+
             </div>
-
-
-            <embed id="pdf" />
-
-            <script src="scripts/script.js"></script>
-
         </div>
-    </div>
 
 
-    <div id="social">
-        <a href="https://linkedin.com/in/mikael-benini/"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/MikaelBenini"><i class="fa fa-github"></i></a>
+        <div id="social">
+            <a href="https://linkedin.com/in/mikael-benini/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/MikaelBenini"><i class="fa fa-github"></i></a>
+        </div>
     </div>
 </body>
 
