@@ -45,7 +45,7 @@ function isMobile() {
 // Text
 // ——————————————————————————————————————————————————
 
-const text = "Hello! My name is Mikael Siqueira Benini|I have a degree in Software Engineering and experience in infrastructure and customer service. I seek to create effective and innovative solutions using technologies such as Laravel, MariaDB, and JavaScript.|I am always learning and acquiring new skills to improve my abilities in software development. I have experience working on projects in different segments with multidisciplinary teams. This has allowed me to expand my knowledge in technology, programming, systems analysis, software architecture, and agile methodologies.|I am a problem solver with leadership skills, effective communication, and project management experience.";
+const text = "Hello! My name is Mikael Siqueira Benini|Developer by passionate programming, committed to offering efficient and effective solutions.|With attitude proactive and strong work ethic, |I am eager to grow and contribute to my skills to achieve goals business.";
 
 const el = document.querySelector('.text')
 let index = 0
