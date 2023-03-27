@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Mikael Benini</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/mini.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/certificates.css">
@@ -23,7 +23,7 @@
         <div class="parallax" style="background-image: url('/assets/images/website-background.png');">
             <div>
                 <div id="navbar">
-                    <h2> Mikael Siqueira Benini </h2>
+                    <h2 onclick="displayCertificate('curriculum.pdf')"> Mikael Siqueira Benini </h2>
                 </div>
                 <div id="content">
                     <p id="name">Resume</p>
@@ -72,6 +72,18 @@
                 <p id="name" style="padding: 0 40px 0px 40px;">Certificates</p>
             </div>
             <div id="certificate-list">
+                <div class="certificate-item" onclick="displayCertificate('Anal.pdf')">
+                    <div id="certificate">
+                        <div id="issuer-logo">
+                            <img src="assets/logos/anal-logo.png" alt="Issuer Logo">
+                        </div>
+                        <div id="information">
+                            <p>Centro Universitario Assis Gurgacz</p>
+                            <p class="emphasis">Analist of Systems</p>
+                            <p>Set, 2022</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="certificate-item" onclick="displayCertificate('eng.pdf')">
                     <div id="certificate">
                         <div id="issuer-logo">
@@ -85,18 +97,6 @@
                     </div>
                 </div>
                 <div class="certificate-item" onclick="displayCertificate('20cur.pdf')">
-                    <div id="certificate">
-                        <div id="issuer-logo">
-                            <img src="assets/logos/anal-logo.png" alt="Issuer Logo">
-                        </div>
-                        <div id="information">
-                            <p>Centro Universitario Assis Gurgacz</p>
-                            <p class="emphasis">Analist of Systems</p>
-                            <p>Set, 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="certificate-item" onclick="displayCertificate('anal.pdf')">
                     <div id="certificate">
                         <div id="issuer-logo">
                             <img src="assets/logos/udemy-logo.png" alt="Issuer Logo">
